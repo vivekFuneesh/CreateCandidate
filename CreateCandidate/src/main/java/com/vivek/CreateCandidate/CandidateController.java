@@ -50,8 +50,8 @@ public class CandidateController {
 	public ModelAndView addCandidate(HttpServletRequest request, HttpServletResponse response) {
 		
 		//AnnotationConfigApplicationContext acac(ModelServiceConfig.class);
-		ModelAndView mv=factory.getBean(ModelAndView.class);//new ModelAndView();
-		App app=factory.getBean(App.class);//new App();
+		ModelAndView mv=new ModelAndView();
+		App app=new App();
 
 		Integer k=Integer.valueOf(900);
 		boolean result=app.addCandidate(request);
@@ -64,8 +64,8 @@ public class CandidateController {
 	@RequestMapping("/update")
 	public ModelAndView updateCandidate(HttpServletRequest request, HttpServletResponse response) {
 		//AnnotationConfigApplicationContext acac(ModelServiceConfig.class);
-		ModelAndView mv=factory.getBean(ModelAndView.class);//new ModelAndView();
-		App app=factory.getBean(App.class);//new App();
+		ModelAndView mv=new ModelAndView();
+		App app=new App();
 
 		boolean result=app.updateCandidate(request);
 		Integer k=Integer.valueOf(800);
