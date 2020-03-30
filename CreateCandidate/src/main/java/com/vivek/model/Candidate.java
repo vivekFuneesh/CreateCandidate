@@ -96,11 +96,11 @@ public class Candidate {
 	private String phone;
 
 	@NotNull///It will fail test of "" or "   ".... i am just lazy here to check this ...
-	@DateTimeFormat(style="YYYY-MM-DD")
+	@DateTimeFormat(style="yyyy-MM-dd")
 	private Date offerDate;
 
 	@NotNull
-	@DateTimeFormat(style="YYYY-MM-DD")
+	@DateTimeFormat(style="yyyy-MM-dd")
 	private Date joiningDate;
 
 	private String experience;
