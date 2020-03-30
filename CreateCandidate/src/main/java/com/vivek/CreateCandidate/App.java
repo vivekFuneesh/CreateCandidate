@@ -99,7 +99,10 @@ public class App {
 		}catch(Exception er) {
 			er.printStackTrace();
 			return false;
-		}
+		}finally{
+                        candy=null;
+                        cdi=null;
+                }
 		return true;
 	}
 
@@ -135,7 +138,9 @@ public class App {
 		}catch(Exception er) {
 			er.printStackTrace();
 			return false;
-		}
+		}finally{
+                        cdi=null;cdto=null;
+                }
 		return true;
 	}
 
