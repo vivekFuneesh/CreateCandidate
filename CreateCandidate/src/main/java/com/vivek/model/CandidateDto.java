@@ -51,10 +51,10 @@ public class CandidateDto {
 
 	private Boolean finallyJoined;
 
-	@DateTimeFormat(style="YYYY-MM-DD")
+	@DateTimeFormat(style="yyyy-MM-dd")
 	private Date offerAcceptedDate;
 
-	@DateTimeFormat(style="YYYY-MM-DD")
+	@DateTimeFormat(style="yyyy-MM-dd")
 	private Date offerDeclinedDate;
 
 
