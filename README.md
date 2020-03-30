@@ -15,3 +15,18 @@ This is flaw because, it says that use reusable objects till the point you need 
 
 This should be more flexible so that logic flow doesn't end there.
 
+🤣😂😝
+
+Being said above,
+1. Do edit pom.properties file to correct file path.
+
+2. Developement and testing platform is/was windows 7 basic, intel i3 processor.
+
+3. Mongodb is not using any user/password.
+
+4. All request are being directed to CandidateController inside com.vivek.CreateCandidate package.
+
+5. Clean pre-build files.
+
+6. Tomcat 8.0 was used , eclipse , java 1.13.
+
