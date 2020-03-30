@@ -58,6 +58,7 @@ public class CandidateController {
 		mv.setViewName("Display.jsp");
 		mv.addObject("result",k+(result?"<br><br>"
 				+ "You have successfylly rejistered"+request.getParameter("candidateId"):"Error, check stackTrace"));
+                app=null;
 		return mv;
 	}
 
@@ -72,7 +73,8 @@ public class CandidateController {
 		mv.setViewName("Display.jsp");
 		mv.addObject("result",k+(result?"<br><br>"
 				+ "You have successfylly updated"+request.getParameter("candidateId"):"Error, check stackTrace"));
-		return mv;
+		app=null;
+                return mv;
 	}
 
 }
