@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "ff74e799-7396-45bf-b1d4-6c317c6e1b9a",
+		"name": "CreateCandidate_vivek Sample Export Collection",
+		"description": "Sample data in this collection is already fulfilled on my system and succesfullly passed.\n\nYou can change values... to check for validation...\nResponse will consist on one line as successfully rejistered/updated with ID ... or Check error stack ... instead of Logger, system.out has been used in code..\n\nDate must be of format.. yyyy-MM-DD (eg. 2020-02-23)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Candidate Vivek",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/CreateCandidate/add?candidateId=16463&name=Vivek Mangla&email=viek.funeesh@gmail.com&experience=11months&offerDate=2020-01-04&joiningDate=2020-04-25&previousSalary=1525000&offeredSalary=1600000&phone=8930985080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CreateCandidate",
+						"add"
+					],
+					"query": [
+						{
+							"key": "candidateId",
+							"value": "16463"
+						},
+						{
+							"key": "name",
+							"value": "Vivek Mangla"
+						},
+						{
+							"key": "email",
+							"value": "viek.funeesh@gmail.com"
+						},
+						{
+							"key": "experience",
+							"value": "11months"
+						},
+						{
+							"key": "offerDate",
+							"value": "2020-01-04"
+						},
+						{
+							"key": "joiningDate",
+							"value": "2020-04-25"
+						},
+						{
+							"key": "previousSalary",
+							"value": "1525000"
+						},
+						{
+							"key": "offeredSalary",
+							"value": "1600000"
+						},
+						{
+							"key": "phone",
+							"value": "8930985080"
+						}
+					]
+				},
+				"description": "Note that date must be of the format::\nyyyy-MM-DD ,i.e.(Year,Month,Date)\n\nEg.:: 2020-02-27\n\nAlso, \nin Mongodb No authentication mechanism has been provided ..... me being lazy & eyes are hurting now."
+			},
+			"response": []
+		},
+		{
+			"name": "Update Candidate Vivek",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/CreateCandidate/update?candidateId=16463&finallyJoined=true&offerAcceptedDate=2020-03-20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CreateCandidate",
+						"update"
+					],
+					"query": [
+						{
+							"key": "candidateId",
+							"value": "16463"
+						},
+						{
+							"key": "finallyJoined",
+							"value": "true"
+						},
+						{
+							"key": "offerAcceptedDate",
+							"value": "2020-03-20"
+						}
+					]
+				},
+				"description": "Note that date must be of the format::\nyyyy-MM-DD ,i.e.(Year,Month,Date)\n\nEg.:: 2020-02-27\n\nAlso,\nin MongoDB, No authentication Mechanism for username and password has been prvided...me being lazy & eyes are hurting now."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d27ac654-dd43-4d43-bc9c-a7d7124259fb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "99ba9931-877e-4657-9b31-307437101569",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
