@@ -17,3 +17,4 @@
 
 6. Tomcat 8.0 was used , eclipse , jdk 13.
 
+7. db name is sample0, can be changes using uriInitializer.
