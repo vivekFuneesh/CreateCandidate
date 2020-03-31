@@ -47,10 +47,10 @@ import com.vivek.model.CandidateDto;
 
 /**
  * This class provides implementation for add and update candidate.<br>
- * @Autowired objects will process either add or update at a time.<br>
+ * @Autowired objects will process either add or update at a time...Naa it's only for sharable objects so not using this tag.<br>
  * With every call made to it's methods, a new object of Service to be created
  * by it's caller. This memory can be an overhead at middle layer for application logic
- * flow & hence I think that threading can be used.
+ * flow & hence I think that threading can be used.. at initial level of logic..
  * */
 //@Repository
 public class CandidateDaoImpl implements CandidateDao {
