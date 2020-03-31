@@ -15,5 +15,5 @@
 
 5. Clean pre-build files.
 
-6. Tomcat 8.0 was used , eclipse , java 1.13.
+6. Tomcat 8.0 was used , eclipse , jdk 13.
 
