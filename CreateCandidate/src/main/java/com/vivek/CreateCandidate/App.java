@@ -79,17 +79,17 @@ public class App {
 	 * */
 	CandidateDaoImpl cdi;
 	/**
-	 * Note that this will be overwritten everytime addCandidate is called,
+	 * Note that this will be overwritten everytime updateCandidate is called,
 	 * so it need not to be reinitialized on each request.
 	 * */
 	CandidateDto cdto;
 
 	public boolean addCandidate(HttpServletRequest request) {
-		try {
+		try {//In future, multithreading can be implemented here, so using synch. block!
 			//To avoid database misManipulation, might be I am wrong here, lack of knowledge.<br>
 			//This synchronization is for the case, if any multi-threading concept is 
 			//introduced before this point....<br> i think server takes care of that
-			//so might be no need to use this synch.
+			//so might be no need to use this synch(if explicit threading is not introduced with shared candidate object).
 			synchronized(this) {
 				candy=new Candidate();//factory.getBean(Candidate.class);
 				Candidate candy=getCandidateObject(request);
