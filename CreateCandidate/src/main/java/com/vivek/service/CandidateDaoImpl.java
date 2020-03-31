@@ -126,13 +126,7 @@ public class CandidateDaoImpl implements CandidateDao {
 
 	private boolean checkDuplicacy(Candidate candy) {
 
-		//query=new Query();//This must be changed to getBean() from applicationContext object, 
-		//otherwise I don't think, it's a good practice.
-		//..Now i have commented it as, at lowest layer, no need to allocate new objects...
-		//allocate only at middle or higher layer within logic-flow.
-		//sync. can be achieved at middle or higher level too.
-		//another reason is also because of my experience with MYSql db says that db takes care of 
-		//sync issues by itself.
+		//query=new Query();// getBean() gives shareable objects that's why using new() here.
 		query=new Query();//factory.getBean(Query.class);
 		query.addCriteria(Criteria.where("candidateId").is(candy.getCandidateId()));
 
