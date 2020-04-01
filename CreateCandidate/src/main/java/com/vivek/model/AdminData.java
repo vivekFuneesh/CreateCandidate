@@ -32,18 +32,18 @@ import org.springframework.stereotype.Component;
 //@Component
 public class AdminData {
 
-	@DateTimeFormat(style="yyyy-MM-dd")
+	//@DateTimeFormat(style="yyyy-MM-dd")
 	private Date creationDateTime;
 
-	@DateTimeFormat(style="yyyy-MM-dd")
+	//@DateTimeFormat(style="yyyy-MM-dd")
 	private Date lastModifiedDateTime;
 
 	private Boolean finallyJoined;
 
-	@DateTimeFormat(style="yyyy-MM-dd")
+	//@DateTimeFormat(style="yyyy-MM-dd")
 	private Date offerAcceptedDate;
 
-	@DateTimeFormat(style="yyyy-MM-dd")
+	//@DateTimeFormat(style="yyyy-MM-dd")
 	private Date offerDeclinedDate;
 
 
