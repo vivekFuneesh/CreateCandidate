@@ -1,5 +1,5 @@
 # CreateCandidate
- Backend Service API for MongoDb in Spring MVC
+ Backend Service API for MongoDb in Spring MVC(not a generalized one but for a small purpose of candidates joining a company).
 
 
     MIT LICENCE
